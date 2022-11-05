@@ -1,0 +1,138 @@
+nav {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav {
+  width: 85%;
+
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+.nav-logo h2 {
+  color: #fb3f6c;
+  font-style: italic;
+}
+.nav-logo h2 span {
+  color: black;
+}
+
+.main-nav-links {
+  width: 80%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links {
+  width: 75%;
+  display: flex;
+}
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+.nav-btn button {
+  outline: none;
+  padding: 3px 3px;
+  height: 50px;
+  width: 120px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 105, 141, 0.5);
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+.nav-links ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-links ul li a {
+  color: #747582;
+  font-weight: 400;
+}
+.Hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.Hamburger svg {
+  font-size: 30px;
+  cursor: pointer;
+}
+.menu-close {
+  font-size: 25px;
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .nav-logo {
+    width: fit-content;
+  }
+  .Hamburger {
+    display: flex;
+  }
+  .main-nav-links {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    /* background: linear-gradient(
+      327.88deg,
+      rgba(255, 1, 47, 0.3) -1.21%,
+      rgba(255, 1, 62, 0) 73.11%
+    );
+    background-color: rgb(247, 147, 170); */
+    background-color: #fbcfe8;
+    z-index: 99;
+  }
+  .main-nav-links-show {
+    width: 50%;
+  }
+  .nav-links {
+    height: 80%;
+    width: 50%;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  .nav-btn {
+    height: max-content;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 541px) {
+  .menu-close {
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
+  .main-nav-links-show {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav-logo h2 {
+    font-size: 20px;
+  }
+}

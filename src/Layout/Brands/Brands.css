@@ -1,0 +1,33 @@
+.Brands {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.Brands-main {
+  width: 85%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Brands-main img {
+  width: 13%;
+  object-fit: contain;
+}
+@media screen and (max-width: 991px) {
+  .Brands-main {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Brands-main {
+    justify-content: center;
+  }
+  .Brands-main img {
+    width: 80%;
+    object-fit: scale-down;
+  }
+}
